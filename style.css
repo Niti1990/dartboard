@@ -1,0 +1,38 @@
+.body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vw;
+	display: flex;
+	place-items: center;
+}
+.wrapper {
+	width: 500px;
+	height: 500px;
+	display: flex;
+	align-self: center;
+	border-radius: 50%;
+	background-color: aquamarine;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+.dart {
+	width: 15px;
+	height: 15px;
+	background-color: rgb(229, 240, 32);
+	border: 5px dotted rgb(0, 21, 255);
+	position: absolute;
+	border-radius: 50%;
+	transform: translate(-12px, -12px);
+	animation: incoming 0.7s;
+}
+@keyframes incoming {
+	0% {
+		transform: rotate(270deg) translateX(-200px);
+	}
+	20% {
+		border-radius: 7px;
+	}
+}
